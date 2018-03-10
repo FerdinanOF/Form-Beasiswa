@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulir Beasiswa</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+</head>
+<body>
+	  <div class="card ">
+		  <div class="card-header text-center">
+		   	<h1 style="color: grey;">BEASISWA FILKOM UNIVERSITAS BRAWIJAYA</h1>
+		  </div>
+		  <div class="card-body">
+		  <div style="background: url(biru.jpg) no-repeat fixed; background-size: 2000px;"  class="container">
+			<div style="margin-top: 50px;" class="row">
+			<div class="col-lg-11">
+				<form action="beasiswa.php" method="post" enctype="multipart/form-data" >
+
+					<div >
+					    <label>Nama Lengkap</label>
+					    <input type="text" class="form-control" name="datanama" required="">
+					</div>
+					<div style="margin-top: 15px">
+					    <label>NIM</label>
+					    <input type="number" class="form-control" name="datanim" required="">
+					</div>
+					<div style="margin-top: 15px">
+					    <label>IPK terakhir</label>
+					    <input type="double" class="form-control" name="dataipk" required="">
+					</div>
+
+					<p>Jenis Kelamin : </p>
+					<div style="margin-top: -10px;" class="custom-control custom-radio">
+				   	    <input type="radio" id="customRadio1" class="custom-control-input" name="jenis" value="Laki-laki" checked="">
+						<label class="custom-control-label" for="customRadio1">Laki-laki</label>
+					</div>
+				    <div style="margin-bottom: 20px;" class="custom-control custom-radio">
+						<input type="radio" id="customRadio2" class="custom-control-input" name="jenis" value="Perempuan">
+						<label class="custom-control-label" for="customRadio2">Perempuan</label>
+					</div>
+
+					<div style="margin-bottom: 20px;">
+					    <label>Alamat Email</label>
+					    <input type="email" class="form-control" placeholder="Enter email" name="dataemail" required="">
+					    <small id="emailHelp" class="form-text text-muted"></small>
+					</div>
+
+
+
+					<p style="margin-bottom: 5px;">Sertifikat yang dimiliki :</p>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" name="sertifikat[1]" class="custom-control-input" id="customCheck1" value="Juara Lomba">
+			     		<label class="custom-control-label" for="customCheck1">Juara Lomba</label>
+					</div>
+				    <div class="custom-control custom-checkbox">
+						<input type="checkbox" name="sertifikat[2]" class="custom-control-input" id="customCheck2"  value="Kepengurusan Organisasi">
+						<label class="custom-control-label" for="customCheck2">Kepengurusan Organisasi</label>
+				    </div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" name="sertifikat[3]" class="custom-control-input" id="customCheck3"  value="Kepanitiaan">
+						<label class="custom-control-label" for="customCheck3">Kepanitiaan</label>
+					</div>
+
+					<p style="margin-bottom: 25px;"></p>
+					<div class="custom-file">
+						<input type="file" name="foto" class="custom-file-input" id="customFile" required="">
+						<label class="custom-file-label">Masukkan pas foto</label>
+					</div>
+
+					<p style="margin-bottom: 20px;"></p>
+					<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Prodi</label>
+						<select name="prodi" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required="">
+						    <option selected></option>
+						    <option value="Teknik Informatika">Teknik Informatika</option>
+						    <option value="Teknik Komputer">Teknik Komputer</option>
+						    <option value="Pend. Teknologi Informasi">Pend. Teknologi Informasi</option>
+						    <option value="Sistem Informasi">Sistem Informasi</option>
+						    <option value="Teknologi Informasi">Teknologi Informasi</option>
+						</select>
+
+					<p style="margin-bottom: 20px;"></p>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Kontribusi yang anda lakukan kepada filkom apabila mendapatkan beasiswa</label>
+						    <textarea name="kontribusi" class="form-control" id="exampleFormControlTextarea1" rows="3" required=""></textarea>
+					</div>
+
+						<center>
+						  <button type="button" class="btn btn-secondary btn-lg">
+						  	<input type="Submit" name="kirim">
+						  </button></a>
+						</center>
+				</form>
+			</div>
+			</div>
+		  </div>
+		  </div>
+			  <div class="card-footer text-muted">
+			    <img src="filkom.png" width="120"> 
+			  </div>
+</div>
+</body>
+</html>
